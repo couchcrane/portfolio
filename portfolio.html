@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan's Project Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+        body {
+            background-color: #e8eaed; /* Desk color */
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            margin: 0;
+            color: #333;
+        }
+
+        .notepad {
+            width: 100%;
+            max-width: 800px;
+            background-color: #fffdf2; /* Paper color */
+            font-family: 'Caveat', cursive, sans-serif;
+            font-size: 24px;
+            line-height: 40px; /* Matches line height */
+            padding: 40px 40px 40px 80px;
+            box-shadow: 8px 8px 20px rgba(0,0,0,0.15);
+            position: relative;
+            /* Blue lines */
+            background-image: linear-gradient(#b3d4fc 1px, transparent 1px);
+            background-size: 100% 40px;
+            border-radius: 2px 10px 10px 2px;
+        }
+
+        /* Red margin line */
+        .notepad::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 60px;
+            width: 2px;
+            background-color: #ff9999;
+        }
+
+        h1, h2, h3 {
+            margin: 20px 0 10px 0;
+            color: #222;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 48px;
+            border-bottom: 3px dashed #777;
+            display: inline-block;
+            margin-top: 0;
+        }
+
+        p {
+            margin: 0 0 20px 0;
+            padding: 0;
+        }
+
+        .media-container {
+            margin: 20px 0;
+            text-align: center;
+            overflow: hidden; 
+        }
+
+        img, video {
+            max-width: 90%;
+            border: 2px solid #555;
+            border-radius: 4px;
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+            background: #fff;
+            padding: 5px;
+            /* Slight tilt for a scrapbook polaroid look */
+            transform: rotate(-1deg);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover, video:hover {
+            transform: rotate(1deg);
+        }
+
+        a {
+            color: #0b5394;
+            text-decoration: none;
+            border-bottom: 2px solid #0b5394;
+        }
+
+        a:hover {
+            color: #cc0000;
+            border-bottom-color: #cc0000;
+        }
+
+        ul {
+            margin: 0 0 20px 0;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="notepad">
+    <h1>Hi, I'm Ivan 🚀</h1>
+    <p>Welcome to my engineering portfolio! I'm a full-stack developer and junior engineer specializing in embedded systems, IoT architecture, and seamless hardware-software integration.</p>
+
+    <h2>Featured Project: Flush</h2>
+    <p>A smart, payment-enabled modular lock system designed for portable restrooms. I integrated real-time over-the-air firmware updates and AWS cloud infrastructure to ensure reliability without physical access.</p>
+
+    <div class="media-container">
+        <!-- Example Image -->
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Hardware Prototype">
+        <p style="font-size: 18px; color: #555; margin-top: 10px;"><em>Hardware schematic and ESP32 breadboard prototype.</em></p>
+    </div>
+
+    <h2>System Demonstration</h2>
+    <p>Here is a quick walkthrough of the payment terminal triggering the electric strike door lock using MQTT protocols.</p>
+
+    <div class="media-container">
+        <!-- Example Video -->
+        <video controls poster="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&w=800&q=80">
+            <!-- Sample MP4 -->
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <h2>Technical Skills</h2>
+    <ul>
+        <li><strong>Hardware Design:</strong> ESP32, Relay Drivers, Custom PCBs</li>
+        <li><strong>Firmware Development:</strong> C++, Arduino IDE, MQTT</li>
+        <li><strong>Cloud Integration:</strong> AWS Lambda, IoT Core, DynamoDB</li>
+    </ul>
+
+    <h2>Let's Connect</h2>
+    <p>Check out my code on <a href="https://github.com/yourusername">GitHub</a> or shoot me an <a href="mailto:your.email@example.com">Email</a>.</p>
+</div>
+
+</body>
+</html>
